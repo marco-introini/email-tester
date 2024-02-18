@@ -21,6 +21,21 @@
             rows="10"
             inline/>
 
+        <x-input
+            label="Sender(email)"
+            name="sender_email"
+            />
+
+        <x-input
+            label="Sender(name)"
+            name="sender_name"
+        />
+
+        <x-input
+            label="To"
+            name="to"
+        />
+
         <x-button
             label="Invia email"
             type="submit"
