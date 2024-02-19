@@ -13,12 +13,12 @@ Route::post('invia-email', function (Request $request) {
     $validated = $request->validate([
         'testo' => 'required',
         'sender_email' => ['required','email'],
-        'sender_text' => 'required',
+        'sender_name' => 'required',
         'to' => ['required','email'],
     ]);
 
     Mail::html($validated['testo'], function ($message) use ($validated) {
-        $message->from($validated['sender_email'], $validated['sender_text']);
+        $message->from($validated['sender_email'], $validated['sender_name']);
         $message->to($validated['to']);
         $message->subject('Esempio Invio email');
     });

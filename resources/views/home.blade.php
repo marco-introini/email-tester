@@ -11,7 +11,9 @@
 <body>
 
 
-<div class="m-5">
+<div class="m-5 p-10">
+
+    <h1 class="text-3xl font-bold mb-5">Send test email</h1>
 
     <form action="{{route('invia-email')}}" method="post">
         @csrf
@@ -37,8 +39,9 @@
         />
 
         <x-button
-            label="Invia email"
+            label="Send Email"
             type="submit"
+            class="mt-3 w-full"
         />
 
     </form>
