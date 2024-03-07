@@ -10,7 +10,7 @@
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.4",
         "livewire/volt": "^1.6",
-        "robsontenorio/mary": "dev-bootcamp",
+        "robsontenorio/mary": "^1.25",
         "spatie/ray": "^1.41"
     },
     "require-dev": {
