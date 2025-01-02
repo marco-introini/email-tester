@@ -25,3 +25,4 @@ Route::post('invia-email', function (Request $request) {
 
     echo "Mail inviata";
 })->name('invia-email');
+
